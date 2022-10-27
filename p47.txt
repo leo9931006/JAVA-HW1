@@ -1,0 +1,20 @@
+public class leo
+        {
+            public static void main(String[] args)throws IOExecption
+            {
+                System.out.println("請輸入五人的成績:");
+                BufferedReader br =
+                        new BufferedReader(new InputStreamReader(System.in));
+                Integer score[]=new int[5];
+                for(i=0;i<=4;i++)
+                {
+                    String str = br.readLine();
+                    score[i]=Integer.parseInt(str);
+                }
+               Arrays.sort(test, Collections.reverseOrder());
+                for(int a=0;a<5;a++)
+                {
+                    System.out.println("第"+a+1+"名分數是"+score[a]);
+                }
+            }
+        }

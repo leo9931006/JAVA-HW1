@@ -1,0 +1,17 @@
+public class leo
+        {
+            public static void main(String[] args)throws IOExecption
+            {
+                System.outprintln("請輸入整數");
+                BufferedReader br =
+                        new BufferedReader(new InputStreamReader(System.in));
+                int x =Integer.parseInt(br.readLine());
+                    if(x==1)
+                    {
+                        System.outprintln("輸入的是1");
+                    }
+                    else
+                    {
+                        System.outprintln("選擇的是1以外的數字");
+                    }
+        {

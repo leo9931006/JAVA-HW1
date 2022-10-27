@@ -1,0 +1,31 @@
+public class leo
+        {
+            public static void main(String[] args)throws IOExecption
+            {
+                System.out.println("請輸入五人的成績:");
+                BufferedReader br =
+                        new BufferedReader(new InputStreamReader(System.in));
+                int score[]=new int[5];
+                for(i=0;i<=4;i++)
+                {
+                    String str = br.readLine();
+                    score[i]=Integer.parseInt(str);
+                }
+                for(int x=0;x<5;x++)
+                {
+                    for(int y=x+1;y<5;y++)
+                    {
+                        if(score[y]>score[x])
+                        {
+                            int cha = score[y];
+                            score[y]=score[x];
+                           score[x]=cha;
+                        }
+                    }
+                }
+                for(int a=0;a<5;a++)
+                {
+                    System.out.println("第"+a+1+"名分數是"+score[a]);
+                }
+            }
+        }

@@ -1,0 +1,19 @@
+public class leo
+        {
+            public static void main(String[] args)throws IOExecption
+            {
+                System.out.println("要在第幾個迴圈結束?(1~10)");
+                BufferedReader br =
+                        new BufferedReader(new InputStreamReader(System.in));
+                String str = br.readLine();
+                int res = Integer.parseInt(str);
+                for(i=1;i<=10;i++)
+                {
+                    System.out.println("第"+i+"次迴圈");
+                    if(i==res)
+                    {
+                        break;
+                    }
+                }
+            }
+        }
